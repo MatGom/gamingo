@@ -113,6 +113,27 @@
 	}
 }
 
+.burger-icon.burger-close-icon {
+	span {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	span:nth-child(1) {
+		transform: rotate(45deg);
+	}
+
+	span:nth-child(2) {
+		display: none;
+	}
+
+	span:nth-child(3) {
+		transform: rotate(-45deg);
+		width: 100%;
+	}
+}
+
 @media (max-width: 992px) {
 	.nav {
 		.navbar {
@@ -145,6 +166,7 @@
 	.nav {
 		.navbar {
 			.menu {
+				display: none;
 				flex-direction: column;
 				background: $light-color;
 
@@ -152,6 +174,10 @@
 					color: $main-color;
 					width: 100%;
 				}
+			}
+
+			.show-menu {
+				display: flex;
 			}
 		}
 	}
