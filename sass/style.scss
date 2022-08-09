@@ -5,6 +5,7 @@ $darker-light-color: #b2bec3;
 $lighter-dark-color: #636e72;
 $dark-color: #2d3436;
 $main-color: #0984e3;
+$main-color-alfa: rgba(9, 132, 227, 0.5);
 $transition: all 0.3s;
 
 *,
@@ -32,4 +33,22 @@ body {
 	padding: 5em 0;
 }
 
+.btn {
+	padding: 1em 3em;
+	font-size: 16px;
+	color: $light-color;
+	border: 3px solid $light-color;
+	border-radius: 28px;
+	background: transparent;
+	transition: $transition;
+	cursor: pointer;
+
+	&:hover {
+		box-shadow: 0 0 15px $light-color;
+		background: $main-color-alfa;
+		border-radius: 10px;
+	}
+}
+
 @import 'nav';
+@import 'header';
