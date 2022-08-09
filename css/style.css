@@ -1,3 +1,26 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+:root {
+  scroll-behavior: smooth;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 5em 0;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFTQTs7O0VBR0MsU0FBQTtFQUNBLFVBQUE7RUFDQSxzQkFBQTtBQ1JEOztBRFdBO0VBQ0MsdUJBQUE7QUNSRDs7QURXQTtFQUNDLG9DQXRCVztBQ2NaOztBRFdBO0VBQ0MsaUJBQUE7RUFDQSxjQUFBO0FDUkQ7O0FEV0E7RUFDQyxjQUFBO0FDUkQiLCJmaWxlIjoic3R5bGUuY3NzIn0= */

@@ -1,0 +1,33 @@
+$main-font: 'Open Sans', sans-serif;
+$light-color: rgb(223, 230, 233);
+$light-color-alfa: rgba(223, 230, 233, 0.4);
+$darker-light-color: #b2bec3;
+$lighter-dark-color: #636e72;
+$dark-color: #2d3436;
+$main-color: #0984e3;
+$transition: all 0.3s;
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: $main-font;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.section {
+	padding: 5em 0;
+}
