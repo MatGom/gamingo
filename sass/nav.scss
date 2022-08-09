@@ -1,13 +1,13 @@
 .nav {
-	margin: 20px 0 0 0;
 	position: absolute;
-	top: 0;
+	top: 30px;
 	left: 0;
 	right: 0;
 	z-index: 3;
 	background: transparent;
 
 	.navbar {
+		position: relative;
 		display: flex;
 		justify-content: space-between;
 
@@ -19,41 +19,9 @@
 			text-decoration: none;
 		}
 
-		.menu {
-			display: flex;
-		}
-
-		.menu-item {
-			position: relative;
-			transition: $transition;
-			overflow: hidden;
-
-			&::after {
-				position: absolute;
-				top: -100%;
-				left: -100%;
-				width: 100%;
-				height: 100%;
-				content: '';
-				background-color: $light-color;
-				z-index: -1;
-				transition: $transition;
-			}
-
-			&:hover {
-				color: $main-color;
-				box-shadow: 0 0 10px $light-color;
-			}
-
-			&:hover::after {
-				top: 0;
-				left: 0;
-			}
-		}
-
 		.logo {
 			font-size: 28px;
-			padding: 1em 2em;
+			padding: 0 2em;
 
 			span {
 				color: $main-color;
@@ -61,47 +29,134 @@
 		}
 
 		.menu {
+			width: 60%;
+			padding: 0 2em;
 			display: flex;
+			justify-content: space-between;
 			list-style: none;
 
 			li {
-				padding: 1em 2em;
+				display: flex;
+				align-items: center;
 				text-transform: uppercase;
 
-				i {
-					font-size: 16px;
+				.menu-item {
+					position: relative;
+					transition: $transition;
+					overflow: hidden;
+
+					&::after {
+						position: absolute;
+						top: -100%;
+						left: -100%;
+						width: 100%;
+						height: 100%;
+						content: '';
+						background-color: $light-color;
+						z-index: -1;
+						transition: $transition;
+					}
+
+					&:hover {
+						color: $main-color;
+						box-shadow: 0 0 10px $light-color;
+					}
+
+					&:hover::after {
+						top: 0;
+						left: 0;
+					}
+
+					i {
+						font-size: 16px;
+					}
 				}
 			}
 		}
+	}
+}
 
-		.burger-icon {
-			width: 27px;
-			height: 25px;
-			display: none;
-			justify-content: space-between;
-			align-items: flex-end;
+.container {
+	position: relative;
+}
+
+.burger-icon {
+	position: absolute;
+	top: 19px;
+	left: 8%;
+	transform: translateY(-50%);
+	width: 25px;
+	height: 23px;
+	display: none;
+	justify-content: space-between;
+	flex-direction: column;
+	cursor: pointer;
+
+	&:hover span:nth-child(2),
+	&:hover span:nth-child(3) {
+		width: 100%;
+	}
+
+	span {
+		width: 100%;
+		height: 3px;
+		background-color: $light-color;
+		transition: $transition;
+
+		&:nth-child(2) {
+			width: 80%;
+		}
+
+		&:nth-child(3) {
+			width: 60%;
+		}
+	}
+}
+
+@media (max-width: 992px) {
+	.nav {
+		.navbar {
+			justify-content: center;
+		}
+	}
+}
+
+@media (max-width: 813px) {
+	.nav {
+		.navbar {
 			flex-direction: column;
-			cursor: pointer;
+			align-items: center;
 
-			&:hover span:nth-child(2),
-			&:hover span:nth-child(3) {
-				width: 100%;
+			.logo {
+				margin-bottom: 0.5em;
 			}
 
-			span {
-				width: 100%;
-				height: 3px;
-				background-color: $light-color;
-				transition: $transition;
+			.menu {
+				justify-content: space-evenly;
+				width: 90%;
+				padding: 0;
+				display: flex;
+			}
+		}
+	}
+}
 
-				&:nth-child(2) {
-					width: 80%;
-				}
+@media (max-width: 520px) {
+	.nav {
+		.navbar {
+			.menu {
+				flex-direction: column;
+				background: $light-color;
 
-				&:nth-child(3) {
-					width: 60%;
+				.menu-item {
+					color: $main-color;
+					width: 100%;
 				}
 			}
 		}
+	}
+
+	.burger-icon {
+		display: flex;
 	}
 }
