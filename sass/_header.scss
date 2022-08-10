@@ -27,8 +27,10 @@
 
 		h1 {
 			margin: 0 0 20px 0;
+			padding: 0 1em;
 			font-size: 52px;
 			font-weight: 300;
+			text-align: center;
 
 			span {
 				font-weight: 700;
@@ -36,8 +38,52 @@
 		}
 
 		p {
+			padding: 0 1em;
 			font-size: 28px;
 			margin: 0 0 32px 0;
+			text-align: center;
+		}
+	}
+}
+
+@media (max-width: 610px) {
+	.header {
+		.wrapper {
+			h1 {
+				font-size: 46px;
+			}
+
+			p {
+				font-size: 22px;
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.header {
+		.wrapper {
+			h1 {
+				font-size: 42px;
+			}
+
+			p {
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.header {
+		.wrapper {
+			h1 {
+				font-size: 36px;
+			}
+
+			p {
+				font-size: 14px;
+			}
 		}
 	}
 }
