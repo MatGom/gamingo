@@ -1,0 +1,55 @@
+.works {
+	.work {
+		width: 100%;
+
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			padding: 3em 0;
+
+			.work-img {
+				width: 500px;
+			}
+
+			.work-card {
+				width: 500px;
+				height: 500px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+				color: $lighter-dark-color;
+
+				.card-title {
+					font-size: 44px;
+					font-weight: 300;
+				}
+
+				p {
+					line-height: 2;
+				}
+
+				.btn {
+					color: $main-color;
+					border-color: $main-color;
+
+					&:hover {
+						color: $light-color;
+						background: $main-color;
+						box-shadow: 0 0 15px $main-color;
+					}
+				}
+			}
+		}
+	}
+
+	.work-one {
+		background: $section-color;
+	}
+
+	.work-two {
+		.work-img {
+			order: 2;
+		}
+	}
+}
