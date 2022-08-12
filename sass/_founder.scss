@@ -1,0 +1,78 @@
+.founder {
+	position: relative;
+	background-image: url(../images/office-hero.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 50vh;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: $darkest-color;
+		width: 100%;
+		height: 100%;
+		opacity: 0.85;
+	}
+
+	.wrapper {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
+		text-align: center;
+		z-index: 2;
+
+		.founder-img {
+			position: relative;
+			margin: 0 auto;
+			width: 120px;
+			height: 120px;
+			object-fit: contain;
+			border-radius: 50%;
+			transition: $transition;
+			overflow: hidden;
+
+			img {
+				width: 100%;
+			}
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				background: $main-color;
+				width: 100%;
+				height: 100%;
+				opacity: 0.1;
+			}
+
+			&:hover {
+				transform: scale(1.1);
+			}
+		}
+
+		.founder-title {
+			margin: 1.2em;
+			font-size: 28px;
+			color: $light-color;
+			font-weight: normal;
+
+			span {
+				color: $main-color;
+			}
+		}
+
+		p {
+			font-size: 18px;
+			color: $lighter-dark-color;
+
+			span {
+				font-weight: bold;
+			}
+		}
+	}
+}

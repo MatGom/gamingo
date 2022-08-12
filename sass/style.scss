@@ -5,6 +5,7 @@ $darker-light-color: #b2bec3;
 $lighter-dark-color: #636e72;
 $section-color: #f9f9fa;
 $dark-color: #2d3436;
+$darkest-color: black;
 $main-color: #0984e3;
 $main-color-alfa: rgba(9, 132, 227, 0.5);
 $transition: all 0.3s;
@@ -76,3 +77,4 @@ body {
 @import 'header';
 @import 'about';
 @import 'works';
+@import 'founder';
