@@ -6,6 +6,7 @@ $lighter-dark-color: #636e72;
 $section-color: #f9f9fa;
 $dark-color: #2d3436;
 $darkest-color: black;
+$lightest-color: white;
 $main-color: #0984e3;
 $main-color-alfa: rgba(9, 132, 227, 0.5);
 $transition: all 0.3s;
@@ -55,6 +56,13 @@ body {
 	}
 }
 
+.section-subtitle {
+	padding: 0 1em;
+	margin-bottom: 7em;
+	color: $lighter-dark-color;
+	text-align: center;
+}
+
 .btn {
 	padding: 1em 3em;
 	width: 190px;
@@ -78,3 +86,4 @@ body {
 @import 'about';
 @import 'works';
 @import 'founder';
+@import 'services';

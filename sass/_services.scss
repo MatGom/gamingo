@@ -1,0 +1,48 @@
+.services {
+	background: $section-color;
+	.wrapper {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+
+		.service-box {
+			margin-bottom: 5em;
+			width: 50%;
+			display: flex;
+			justify-content: space-around;
+
+			.service-icon {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				background: $lightest-color;
+
+				i {
+					font-size: 34px;
+					color: $main-color;
+				}
+			}
+
+			.service-info {
+				width: 75%;
+				height: 200px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				color: $lighter-dark-color;
+
+				.service-title {
+					font-size: 44px;
+					font-weight: 300;
+				}
+
+				.service-text {
+					line-height: 2;
+				}
+			}
+		}
+	}
+}
