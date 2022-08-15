@@ -1,0 +1,85 @@
+.price {
+	background: $section-color;
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+
+		.price-card {
+			display: flex;
+			flex-direction: column;
+			width: 23%;
+			background: $lightest-color;
+			border-radius: 8px;
+			box-shadow: 0 0 5px $light-color;
+			overflow: hidden;
+
+			.card-tag {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				padding: 1.5em;
+				height: 160px;
+				border-bottom: 3px solid $section-color;
+
+				h3 {
+					font-size: 42px;
+					font-weight: 300;
+					color: $main-color;
+				}
+
+				p {
+					color: $light-color;
+				}
+			}
+
+			.card-info {
+				padding: 1.5em;
+
+				p {
+					font-size: 18px;
+					line-height: 1.8;
+					color: $darker-light-color;
+				}
+			}
+
+			.price-btn {
+				position: relative;
+				padding: 1.5em;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				height: 50px;
+				border: none;
+				background: $main-color;
+				color: $lightest-color;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				font-size: 18px;
+				transition: $transition;
+				overflow: hidden;
+				cursor: pointer;
+
+				&:after {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: -150%;
+					width: 200%;
+					height: 250%;
+					background: $light-color;
+					opacity: 0.5;
+					transform: rotate(45deg);
+					transition: $transition;
+				}
+
+				&:hover::after {
+					left: 10%;
+				}
+
+				&:hover {
+					box-shadow: 0 0 20px $main-color;
+				}
+			}
+		}
+	}
+}
