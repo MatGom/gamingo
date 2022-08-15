@@ -2,6 +2,7 @@
 	background: $section-color;
 	.wrapper {
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 
 		.price-card {
@@ -78,6 +79,52 @@
 
 				&:hover {
 					box-shadow: 0 0 20px $main-color;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.price {
+		.wrapper {
+			justify-content: space-around;
+			.price-card {
+				margin-bottom: 3em;
+				width: 45%;
+			}
+		}
+	}
+}
+
+@media (max-width: 550px) {
+	.price {
+		.wrapper {
+			justify-content: space-around;
+
+			.price-card {
+				width: 80%;
+
+				.card-info {
+					padding: 2em 1.5em;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 370px) {
+	.price {
+		.wrapper {
+			.price-card {
+				.card-info {
+					p {
+						font-size: 16px;
+					}
+				}
+
+				.price-btn {
+					font-size: 16px;
 				}
 			}
 		}
