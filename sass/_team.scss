@@ -4,11 +4,12 @@
 	.wrapper {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
 
 		.team-img {
 			position: relative;
 			width: 20%;
-			height: 350px;
+			height: 400px;
 			overflow: hidden;
 
 			img {
@@ -34,6 +35,7 @@
 
 				h5 {
 					font-size: 26px;
+					text-align: center;
 					color: $lightest-color;
 				}
 
@@ -56,6 +58,26 @@
 			&:hover .img-overlay {
 				opacity: 0.8;
 				z-index: 1;
+			}
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.team {
+		.wrapper {
+			.team-img {
+				width: 45%;
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.team {
+		.wrapper {
+			.team-img {
+				width: 65%;
 			}
 		}
 	}
