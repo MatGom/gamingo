@@ -14,71 +14,71 @@ $transition: all 0.3s;
 *,
 *::before,
 *::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-	font-family: $main-font;
+  font-family: $main-font;
 }
 
 .container {
-	max-width: 1200px;
-	margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .section {
-	padding: 5em 1em;
+  padding: 5em 1em;
 }
 
 .section-title {
-	position: relative;
-	margin-bottom: 1em;
-	text-align: center;
-	font-size: 46px;
-	font-weight: 300;
-	color: $lighter-dark-color;
+  position: relative;
+  margin-bottom: 1em;
+  text-align: center;
+  font-size: 46px;
+  font-weight: 300;
+  color: $lighter-dark-color;
 
-	&::after {
-		content: '';
-		position: absolute;
-		left: 50%;
-		bottom: -10px;
-		transform: translateX(-50%);
-		width: 50px;
-		height: 1px;
-		background: $main-color;
-	}
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 1px;
+    background: $main-color;
+  }
 }
 
 .section-subtitle {
-	padding: 0 1em;
-	margin-bottom: 7em;
-	color: $lighter-dark-color;
-	text-align: center;
+  padding: 0 1em;
+  margin-bottom: 7em;
+  color: $lighter-dark-color;
+  text-align: center;
 }
 
 .btn {
-	padding: 1em 3em;
-	width: 190px;
-	font-size: 16px;
-	color: $light-color;
-	border: 3px solid $light-color;
-	border-radius: 28px;
-	background: transparent;
-	transition: $transition;
-	cursor: pointer;
+  padding: 1em 3em;
+  width: 190px;
+  font-size: 16px;
+  color: $light-color;
+  border: 3px solid $light-color;
+  border-radius: 28px;
+  background: transparent;
+  transition: $transition;
+  cursor: pointer;
 
-	&:hover {
-		box-shadow: 0 0 15px $light-color;
-		background: $main-color-alfa;
-		border-radius: 10px;
-	}
+  &:hover {
+    box-shadow: 0 0 15px $light-color;
+    background: $main-color-alfa;
+    border-radius: 10px;
+  }
 }
 
 @import 'nav';
@@ -90,3 +90,4 @@ body {
 @import 'team';
 @import 'price';
 @import 'branches';
+@import 'store';
