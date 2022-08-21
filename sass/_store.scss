@@ -42,3 +42,16 @@
     }
   }
 }
+
+@media (max-width: 400px) {
+  .store {
+    .wrapper {
+      h2 {
+        margin: 1.2em;
+        font-size: 28px;
+        color: $light-color;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}
