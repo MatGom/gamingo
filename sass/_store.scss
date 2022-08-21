@@ -5,16 +5,17 @@
   background-size: cover;
   background-attachment: fixed;
   height: 50vh;
+  z-index: 3;
 
   &::after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
-    background: $darkest-color;
+    background: $main-color;
     width: 100%;
     height: 100%;
-    opacity: 0.72;
+    opacity: 0.65;
   }
 
   .wrapper {
